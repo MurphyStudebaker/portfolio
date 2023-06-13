@@ -1,4 +1,3 @@
-// import styles from "./Heading.module.css";
 export default function Heading() {
   return (
     <section>
