@@ -1,8 +1,5 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import { source } from "./fonts";
 export const metadata = {
   title: "Murphy Studebaker | Software Engineer",
   description:
@@ -16,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={source.className}>{children}</body>
     </html>
   );
 }

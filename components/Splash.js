@@ -1,14 +1,16 @@
+import { inter } from "../src/app/fonts";
 export default function Splash() {
   return (
     <section>
-      <h1 className="font-black text-7xl">
+      <h1 className={`font-black text-7xl ${inter.className}`}>
         <span className="text-green-600">I&apos;m Murphy,</span>
         <br /> a creative software engineer
         <span className="text-green-600">*</span> in Los Angeles
       </h1>
       <div className="h-6" />
       <h2 className="text-xl">
-        <span className="text-green-600">*</span>I&apos;m also a{" "}
+        <span className={"text-green-600 " + inter.className}>*</span>I&apos;m
+        also a{" "}
         <a
           href="https://open.spotify.com/artist/2CDcnaCbLqaJBTDxFlaoXj"
           className="transition-colors hover:text-green-600"
