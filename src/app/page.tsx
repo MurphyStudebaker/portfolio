@@ -9,17 +9,11 @@ export default function Home() {
           <Heading />
         </main>
         <footer className="py-6">
-          {" "}
           <a className="transition-colors hover:text-green-600" href="">
             built with 🏳️‍🌈
-          </a>{" "}
+          </a>
           by murphy studebaker
         </footer>
-        {/* <Image
-          src={asterisk}
-          alt=""
-          className="fill-green-600 stroke-green-600"
-        /> */}
       </div>
     </div>
   );

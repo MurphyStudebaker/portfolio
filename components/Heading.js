@@ -9,27 +9,27 @@ export default function Heading() {
       </h1>
       <div className="h-6" />
       <h2 className="text-xl">
-        <span className="text-green-600">*</span>I'm also a{" "}
+        <span className="text-green-600">*</span>I'm also a
         <a href="" className="transition-colors hover:text-green-600">
           songwriter
         </a>
-        ,{" "}
+        ,
         <a className="transition-colors hover:text-green-600" href="">
           amateur carpenter
         </a>
-        , and (retired){" "}
+        , and (retired)
         <a className="transition-colors hover:text-green-600" href="">
           Harry Potter YouTuber
         </a>
       </h2>
       <div className="h-24" />
       <p className="text-3xl">
-        I currently{" "}
-        <span className="text-green-600">teach computer science full-time</span>{" "}
-        at Chapman University's Fowler School of Engineering{" "}
+        I currently
+        <span className="text-green-600">teach computer science full-time</span>
+        at Chapman University's Fowler School of Engineering
         <span className="text-green-600">
-          while getting my Masters in Computer Science{" "}
-        </span>{" "}
+          while getting my Masters in Computer Science
+        </span>
         from Georgia Tech's OMSCS
       </p>
       <div className="h-6" />
