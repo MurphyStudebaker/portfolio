@@ -58,14 +58,14 @@ export default function Splash() {
         >
           Inhale Meditation Timer{" "}
         </a>{" "}
-        |{" "}
+        <span className="text-green-600">*</span>{" "}
         <a
           className="transition-colors hover:text-green-600"
           href="https://buildwithpride.org/"
         >
           Build With Pride{" "}
         </a>{" "}
-        |{" "}
+        <span className="text-green-600">* </span>
         <a
           className="transition-colors hover:text-green-600"
           href="https://getcascara.com/"
