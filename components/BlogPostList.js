@@ -2,10 +2,8 @@ import notion from "../lib/notion";
 
 async function getData() {
   const res = await notion.databases.query({
-    database_id: "e438746c684046c3918a4f9e7b87f8bc",
+    database_id: process.env.CMS_DB_ID,
   });
-  console.log(res.results[0].properties);
-  console.log("------------------");
   const posts = res.results.map((post) => ({
     id: post.id,
     last_edited_time: post.last_edited_time,
