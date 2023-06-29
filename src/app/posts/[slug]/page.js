@@ -1,10 +1,12 @@
-import notion from "../../../../lib/notion";
+import { getPostBySlug } from "../../../../lib/notion";
+import ReactMarkdown from "react-markdown";
 
-export default function Post({ params }) {
+export default async function Post({ params }) {
+  const post = await getPostBySlug(params.slug);
   return (
     <div>
-      <h1>{params.slug}</h1>
-      <p>body</p>
+      <h1>{post.title}</h1>
+      <ReactMarkdown>{post.markdown}</ReactMarkdown>
     </div>
   );
 }
