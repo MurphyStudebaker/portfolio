@@ -1,17 +1,16 @@
-import { getPublishedPosts } from "../lib/notion";
+import { getPublishedPosts, getAllPosts } from "../lib/notion";
+import StyledLink from "./StyledLink";
 
 export default async function BlogPostList() {
-  const data = await getPublishedPosts();
+  const data = await getAllPosts();
   return (
-    <div>
-      <h2>Writing</h2>
-      <ul>
-        {data.map((p) => (
-          <li key={p.id}>
-            <a href={"/posts/" + p.slug}>{p.title}</a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className="text-xl md:text-2xl flex flex-col gap-2 md:gap-4">
+      {data.map((p) => (
+        <li key={p.id}>
+          <span className="text-green-600 font-bold">* </span>
+          <StyledLink href={"/posts/" + p.slug}>{p.title}</StyledLink>
+        </li>
+      ))}
+    </ul>
   );
 }
