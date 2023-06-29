@@ -6,7 +6,9 @@ export default async function Post({ params }) {
   return (
     <div>
       <h1>{post.title}</h1>
-      <ReactMarkdown>{post.markdown}</ReactMarkdown>
+      <ReactMarkdown className="prose prose-xl dark:prose-invert">
+        {post.markdown}
+      </ReactMarkdown>
     </div>
   );
 }
