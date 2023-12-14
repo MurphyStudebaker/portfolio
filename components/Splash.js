@@ -1,40 +1,33 @@
 import { inter } from "../src/app/fonts";
+import JumboText from "./JumboText";
+import StyledLink from "./StyledLink";
 export default function Splash() {
   return (
     <section>
-      <h1 className={`font-black text-7xl ${inter.className}`}>
+      <JumboText>
         <span className="text-green-600">I&apos;m Murphy,</span>
         <br /> a creative software engineer
         <span className="text-green-600">*</span> in Los Angeles
-      </h1>
+      </JumboText>
       <div className="h-6" />
       <h2 className="text-xl">
         <span className={"text-green-600 " + inter.className}>*</span>I&apos;m
         also a{" "}
-        <a
-          href="https://open.spotify.com/artist/2CDcnaCbLqaJBTDxFlaoXj"
-          className="transition-colors hover:text-green-600"
-        >
+        <StyledLink href="https://open.spotify.com/artist/2CDcnaCbLqaJBTDxFlaoXj">
           songwriter & musician
-        </a>
+        </StyledLink>
         ,
-        <a
-          className="transition-colors hover:text-green-600"
-          href="https://medium.com/@murphystude/how-i-built-a-home-in-the-backseat-of-my-honda-fit-83070a256a6d"
-        >
+        <StyledLink href="https://medium.com/@murphystude/how-i-built-a-home-in-the-backseat-of-my-honda-fit-83070a256a6d">
           {" "}
           amateur carpenter
-        </a>
+        </StyledLink>
         , and (retired){" "}
-        <a
-          className="transition-colors hover:text-green-600"
-          href="https://www.youtube.com/channel/UCVT1XES1u_NJGQjznODQpMA?view_as=subscriber"
-        >
+        <StyledLink href="https://www.youtube.com/channel/UCVT1XES1u_NJGQjznODQpMA?view_as=subscriber">
           Harry Potter YouTuber
-        </a>
+        </StyledLink>
       </h2>
       <div className="h-24" />
-      <p className="text-3xl">
+      <p className="text-xl md:text-2xl">
         I currently{" "}
         <span className="text-green-600">
           teach computer science full-time{" "}
@@ -52,26 +45,15 @@ export default function Splash() {
       <div className="h-24" />
       <p className="text-xl">
         Things I&apos;ve Built:{" "}
-        <a
-          className="transition-colors hover:text-green-600"
-          href="https://inhale.netlify.app/"
-        >
+        <StyledLink href="https://inhale.netlify.app/">
           Inhale Meditation Timer{" "}
-        </a>{" "}
+        </StyledLink>{" "}
         <span className="text-green-600">*</span>{" "}
-        <a
-          className="transition-colors hover:text-green-600"
-          href="https://buildwithpride.org/"
-        >
+        <StyledLink href="https://buildwithpride.org/">
           Build With Pride{" "}
-        </a>{" "}
+        </StyledLink>{" "}
         <span className="text-green-600">* </span>
-        <a
-          className="transition-colors hover:text-green-600"
-          href="https://getcascara.com/"
-        >
-          Cascara{" "}
-        </a>
+        <StyledLink href="https://getcascara.com/">Cascara </StyledLink>
       </p>
       <div className="h-24" />
     </section>
