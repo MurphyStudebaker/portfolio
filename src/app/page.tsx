@@ -14,12 +14,12 @@ export default function Home() {
       <div className="col-span-full">
         <FlowField
           width={width}
-          height={width / 6}
+          height={200}
           strokeColor={"white"}
-          nLines={100}
+          nLines={75}
         />
       </div>
-      <main className="col-start-2 col-span-4 border-top">
+      <main className="col-start-2 col-span-4 row-start-2">
         <Splash />
         {/* <h2 className={inter.className + " font-bold text-2xl pb-6"}>
           Writing
@@ -28,6 +28,14 @@ export default function Home() {
       </main>
       <div className="col-start-2 col-span-4">
         <Footer />
+      </div>
+      <div className="col-span-full row-span-full -mt-96">
+        <FlowField
+          width={width}
+          height={height}
+          strokeColor={"white"}
+          nLines={500}
+        />
       </div>
     </div>
   );
