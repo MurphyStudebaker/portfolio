@@ -1,8 +1,16 @@
 import StyledLink from "../../../../components/StyledLink";
 import JumboText from "../../../../components/JumboText";
-import { getPostBySlug } from "../../../../lib/notion";
+import { getPostBySlug, getPublishedPosts } from "../../../../lib/notion";
 import ReactMarkdown from "react-markdown";
 import Footer from "../../../../components/Footer";
+
+export async function generateStaticParams() {
+  const posts = await getPublishedPosts();
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
 export default async function Post({ params }) {
   const post = await getPostBySlug(params.slug);
