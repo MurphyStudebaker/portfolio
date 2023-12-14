@@ -1,8 +1,6 @@
 "use client";
 import Splash from "../../components/Splash";
-import BlogPostList from "../../components/BlogPostList";
 import Footer from "../../components/Footer";
-import { inter } from "./fonts";
 import FlowField from "./components/FlowField";
 import useWindowDimensions from "./hooks/useWindowDimensions";
 
