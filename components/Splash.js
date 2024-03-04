@@ -26,21 +26,22 @@ export default function Splash() {
           Harry Potter YouTuber
         </StyledLink>
       </h2>
-      <div className="h-24" />
+      {/* <div className="h-24" />
       <p className="text-xl md:text-2xl">
-        I currently{" "}
+        I'm currently working as a{" "}
+        <span className="text-green-600">machine learning engineer </span>
+        at Warner Brothers Discovery{" "}
         <span className="text-green-600">
-          teach computer science full-time{" "}
-        </span>
-        at Chapman University&apos;s Fowler School of Engineering{" "}
-        <span className="text-green-600">while getting my Masters </span>
-        in Computer Science at Georgia Tech & building side projects
+          while getting my Masters in Computer Science{" "}
+        </span>{" "}
+        at Georgia Tech & building side projects
       </p>
       <div className="h-6" />
 
       <p className="text-xl text-green-600">
-        Previously: Data Scientist II at The Walt Disney Company
-      </p>
+        Previously: Computer Sceince Professor at Chapman University, Data
+        Scientist II at The Walt Disney Company
+      </p> */}
 
       <div className="h-24" />
       <p className="text-xl">

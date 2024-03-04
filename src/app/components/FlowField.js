@@ -77,7 +77,7 @@ class Effect {
   }
   render(context) {
     context.strokeStyle = this.strokeColor || "green";
-    context.lineWidth = 4;
+    context.lineWidth = 2;
     context.lineCap = "round";
     for (let i = 0; i < this.maxLength; ++i) {
       this.particles.forEach((particle) => {
@@ -88,7 +88,10 @@ class Effect {
       // make sure no particles cut off into text
       let wholeLineOnCanvas = true;
       particle.history.forEach((point) => {
-        if (point.y >= this.height - context.lineWidth)
+        if (
+          point.y >= this.height - context.lineWidth ||
+          point.y <= 0 + context.lineWidth
+        )
           wholeLineOnCanvas = false;
       });
       if (wholeLineOnCanvas) particle.draw(context);
