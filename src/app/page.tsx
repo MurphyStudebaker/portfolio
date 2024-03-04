@@ -17,7 +17,7 @@ export default function Home() {
         {/* <BlogPostList /> */}
         <Footer />
       </main>
-      <div className="flex-2 absolute top-0 right-0 z-0">
+      <div className="flex-2 absolute top-0 right-0 z-0 hide-on-dark">
         <FlowField
           width={width}
           height={height}
